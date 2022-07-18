@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class VectaryScreen extends StatefulWidget {
   const VectaryScreen({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class _VectaryScreenState extends State<VectaryScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('Vectary'),
+        title: const Text('Flutter 3d'),
         elevation: 0,
         actions: const [
           Icon(Icons.shopping_cart),
@@ -31,12 +31,12 @@ class _VectaryScreenState extends State<VectaryScreen> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // const Expanded(
-          //   child: WebView(
-          //     initialUrl: 'https://app.vectary.com/p/0dLoaJYRQ8Fsg45xJytruM',
-          //     javascriptMode: JavascriptMode.unrestricted,
-          //   ),
-          // ),
+          const Expanded(
+            child: WebView(
+              initialUrl: 'https://app.vectary.com/p/0dLoaJYRQ8Fsg45xJytruM',
+              javascriptMode: JavascriptMode.unrestricted,
+            ),
+          ),
           const SizedBox(
             height: 20,
           ),
@@ -63,7 +63,7 @@ class _VectaryScreenState extends State<VectaryScreen> {
                 ),
                 child: const Center(
                   child: Text(
-                    'Buy Now',
+                    'Comprar',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -85,7 +85,7 @@ class _VectaryScreenState extends State<VectaryScreen> {
                   ),
                   child: const Center(
                     child: Text(
-                      'Add to bag',
+                      'Adicionar',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16,
@@ -108,7 +108,7 @@ class _VectaryScreenState extends State<VectaryScreen> {
     return Column(
       children: const [
         Text(
-          'Sneaker',
+          'Iphone 13 pro',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
@@ -118,7 +118,7 @@ class _VectaryScreenState extends State<VectaryScreen> {
           height: 8,
         ),
         Text(
-          'Sneaker X',
+          'Iphone 13 pro 512 gb ',
           style: TextStyle(
             fontSize: 16,
           ),
